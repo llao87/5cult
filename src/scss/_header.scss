@@ -1,0 +1,146 @@
+header {
+    width: 100%;
+    padding: 1em 0;
+
+    .container {
+        .row.header-bg {
+            background: url(/img/bg-header.png);
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 6.6em;
+
+            .logo-link {
+                margin: 0 11em 0 18em;
+                .logo__img {
+                    height: 3.5em;
+                    width: auto;
+                }
+            }
+            .main-nav {
+                width: 63.8em;
+                padding: 0.3em 0 0 0;
+                .main-nav__link {
+                    position: relative;
+                    font-size: 2em;
+                    color: $orange;
+                    text-decoration: none;
+                    letter-spacing: 0.025em;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+                .main-nav__link.submenu {
+                    padding: 0 1.2em 0 0;
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        background-image: url(/img/icon-arrow-down.svg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        width: 0.7em;
+                        height: 0.7em;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+            .phone-box {
+                color: $orange;
+                font-size: 2em;
+                text-decoration: none;
+                font-weight: 700;
+                margin: 0 2.2em 0 0;
+                letter-spacing: 0.01em;
+                transition: all 0.3s linear;
+
+                &:hover {
+                    color: $yellow;
+                }
+            }
+            .login-box {
+                cursor: pointer;
+
+                .login__icon {
+                    width: 3.4em;
+                    height: 3.4em;
+                    margin: 0 1em 0 0;
+                }
+                .login__enter {
+                    font-size: 2em;
+                    font-weight: normal;
+                    color: $brown;
+                    padding: 0.2em 0 0 0;
+                    transition: all 0.3s linear;
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+            }
+            .burger-box {
+                margin: 0 0 0 2.4em;
+                .burger {
+                    position: relative;
+                    display: block;
+                    width: 2.8em;
+                    height: 0.5em;
+                    border-radius: 5em;
+                    background-color: $orange;
+                    cursor: pointer;
+                    transition: all 0.3s linear;
+
+                    &::before {
+                        position: absolute;
+                        display: block;
+                        content: "";
+                        width: 2.8em;
+                        height: 0.5em;
+                        border-radius: 5em;
+                        background-color: $orange;
+                        top: -0.8em;
+                        transition: all 0.3s linear;
+                    }
+                    &::after {
+                        position: absolute;
+                        display: block;
+                        content: "";
+                        width: 2.8em;
+                        height: 0.5em;
+                        border-radius: 5em;
+                        background-color: $orange;
+                        top: 0.8em;
+                        transition: all 0.3s linear;
+                    }
+
+                    &:hover {
+                        background-color: $yellow;
+
+                        &::before {
+                            background-color: $yellow;
+                        }
+                        &::after {
+                            background-color: $yellow;
+                        }
+                    }
+                }
+            }
+            .cart-box {
+                margin-left: 6.6em;
+                .cart__total {
+                    font-size: 1.8em;
+                    letter-spacing: 0.03em;
+                    color: $brown;
+                }
+                .cart__icon {
+                    margin: 0 1em 0 0;
+                    width: 2.9em;
+                    height: 2.7em;
+                }
+            }
+        }
+    }
+}
